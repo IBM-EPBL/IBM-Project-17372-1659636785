@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>University Admit Eligibility Predictor</title>
+<link rel = "icon" href = "/static/img/Logo.jpg" type = "image/x-icon">
+<!--<link rel="stylesheet" href="style.css">-->
+<style>
+h1{
+font-family:Verdana;
+font-size:1.7rem;
+color:#d77fa1;
+text-align:center;
+}
+#div1{
+padding-left:400px;
+}
+.nameip
+{
+background-color: black;
+color: White ;
+}
+.draglist{
+width: max-content;
+height: max-content;
+color: black;
+background-color:#F3E9DD;
+border: 1px solid orange ;
+border-radius: 5%;
+margin: 5px;
+}
+input,select{
+margin: 10px;
+}
+</style>
+
+</head>
+<body style=" background-image: url('/static/img/background.jpg' ); background-repeat:no-repeat;background-attachment: fixed;background-size: 100% 100%;" ></body>
+<br><br>
+<header>
+<div style="position:absolute;left:1310px;top:0">
+<img src="/static/img/Logo.jpg" alt="Website Logo"
+style="width:40px;height:40px;">
+</div>
+</header>
+<h1
+style="font-family:serif;font-size:40px;text-align:center;text-decoration:underline;color: white">UNIVERSITY ADMIT ELIGIBILITY PREDICTOR<br><br></h1>
+<div id="div1">
+<form id="warship" method="post" action="." style="position:absolute;top:140px;left:350px;font-family:serif;font-size:20px;color:black">
+<label style="margin-top:10px;" for="name">Name : </label>
+<input type="text" id="name" name="name" onfocus="changeBorder(this)"
+onblur="reverseChange(this)" pattern="[a-zA-Z]+" oninvalid="alert('Enter ValidName')" required/><br />
+<label for="GRE Score">GRE Score : </label>
+<input type="text" id="GRE Score" name="GRE Score" onfocus="changeBorder(this)"><br>
+<label for="TOEFL Score">TOEFL Score : </label>
+<input type="text" id="TOEFL Score" name="TOEFL Score" onfocus="changeBorder(this)"><br>
+<label for="University Rating">University Rating : </label>
+<select id="University Rating" name="University Rating" required>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select><br/>
+<label for="SOP">SOP : </label>
+<select id="SOP" name="SOP" required>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select><br/>
+<label for="LOR">LOR : </label>
+<select id="LOR" name="LOR" required>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select><br/>
+<label for="CGPA">CGPA : </label>
+<input type="text" id="CGPA" name="CGPA" onfocus="changeBorder(this)"><br>
+<label for="Research">Research : </label>
+<select id="Research" name="Research" required>
+<option value="0">0</option>
+<option value="1">1</option>
+</select><br/>
+<input type="submit" value="Submit">
+<input type="reset">
+</form></div>
+</body>
+</html>
